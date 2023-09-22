@@ -1,0 +1,52 @@
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    width: 400px;
+    margin-top: 50px;
+
+    .row{
+        div{
+            font-size: 20px;
+            border: 1px solid darkgray;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+
+            &:last-child {
+                background-color: orange;
+                color: white;
+            }
+
+            button {
+                display: inline-block;
+                padding: 20px;
+                width: 100%;
+                border: none;
+                font-size: 20px;
+                margin: 0;
+                text-decoration: none;
+                background: transparent;
+                font-family: sans-serif;
+                font-size: 1rem;
+                cursor: pointer;
+                text-align: center;
+                transition: background 250ms ease-in-out, 
+                            transform 150ms ease;
+            }
+        }
+
+        &:first-child {
+            div{
+                padding: 20px;
+                background-color: darkgray;
+                color: white;
+                justify-content: end;
+                font-weight: bold;
+                font-size: 40px;
+            }
+        }
+    }
+}
